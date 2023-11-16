@@ -1,0 +1,35 @@
+/*  flex  */
+[class*='flex'] {display: -webkit-flex;display: -ms-flexbox;display: flex;}
+/*   finline 行内flex   */
+[class*='finline'] {display: -webkit-inline-flex;display: -ms-inline-flexbox;display: inline-flex;}
+
+/*   *-row   */
+[class*='-row'] {-webkit-flex-direction: row;-ms-flex-direction: row;flex-direction: row;}
+/*   *-rreverse 反横向   */
+[class*='-rreverse'] {-webkit-flex-direction: row-reverse;-ms-flex-direction: row-reverse;flex-direction: row-reverse;}
+/*   *-column   */
+[class*='-column'] {-webkit-flex-direction: column;-ms-flex-direction: column;flex-direction: column;}
+/*   *-creverse 反纵向   */
+[class*='-creverse'] {-webkit-flex-direction: column-reverse;-ms-flex-direction: column-reverse;flex-direction: column-reverse;}
+
+/*   *-*-start   */
+[class*='row-start'],[class*='rreverse-start'],[class*='column-start'],[class*='creverse-start'] {-webkit-justify-content: flex-start;-ms-flex-pack: start;justify-content: flex-start;}
+/*   *-*-end   */
+[class*='row-end'],[class*='rreverse-end'],[class*='column-end'],[class*='creverse-end'] {-webkit-justify-content: flex-end;-ms-flex-pack: end;justify-content: flex-end;}
+/*   *-*-center   */
+[class*='row-center'],[class*='rreverse-center'],[class*='column-center'],[class*='creverse-center'] {-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;}
+/*   *-*-between   */
+[class*='row-between'],[class*='rreverse-between'],[class*='column-between'],[class*='creverse-between'] {-webkit-justify-content: space-between;-ms-flex-pack: justify;justify-content: space-between;}
+/*   *-*-around   */
+[class*='row-around'],[class*='rreverse-around'],[class*='column-around'],[class*='creverse-around'] {-webkit-justify-content: space-around;-ms-flex-pack: distribute;justify-content: space-around;}
+
+/*   *-*-*-start   */
+[class*='start-start'],[class*='center-start'],[class*='between-start'],[class*='around-start'],[class*='end-start'] {-webkit-align-items: flex-start;-ms-flex-align: start;align-items: flex-start;}
+/*   *-*-*-end   */
+[class*='start-end'],[class*='center-end'],[class*='between-end'],[class*='around-end'],[class*='end-end'] {-webkit-align-items: flex-end;-ms-flex-align: end;align-items: flex-end;}
+/*   *-*-*-center   */
+[class*='start-center'],[class*='center-center'],[class*='between-center'],[class*='around-center'],[class*='end-center'] {-webkit-align-items: center;-ms-flex-align: center;align-items: center;}
+/*   *-*-*-baseline   */
+[class*='start-baseline'],[class*='center-baseline'],[class*='between-baseline'],[class*='around-baseline'],[class*='end-baseline'] {-webkit-align-items: baseline;-ms-flex-align: baseline;align-items: baseline;}
+/*    *-*-*-stretch    */
+[class*='start-stretch'],[class*='center-stretch'],[class*='between-stretch'],[class*='around-stretch'],[class*='end-stretch'] {-webkit-align-items: stretch;-ms-flex-align: stretch;align-items: stretch;}
